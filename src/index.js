@@ -76,8 +76,8 @@ function createMarkup(neededCountries) {
                 <p class="country__title" >${name.official}</p>
                 <img class="country__img" src="${flags.svg}" alt="${name.official}" width="60" height="30">
             </div>
-    <p class="country__description">Capital: <span>${capital}<span></p>
-    <p class="country__description">Population: <span>${population}<span></p>
-    <p class="country__description">languages: <span>${allLanguages}<span></p>`;
+    <p class="country__description">Capital: <span>${capital}</span></p>
+    <p class="country__description">Population: <span>${population}</span></p>
+    <p class="country__description">languages: <span>${allLanguages}</span></p>`;
 }).join("");
 }
