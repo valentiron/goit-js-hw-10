@@ -73,7 +73,7 @@ function createMarkup(neededCountries) {
     const allLanguages = Object.values(languages).join(", ");
     
     return `<div class="country__info-box>
-                <p class="country__info-title" >${name.official}</p>
+                <p class="country__title" >${name.official}</p>
                 <img class="country__img" src="${flags.svg}" alt="${name.official}" width="60" height="30">
             </div>
     <p class="country__description">Capital: <span>${capital}<span></p>
