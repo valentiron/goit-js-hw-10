@@ -2,7 +2,6 @@ import './css/styles.css';
 
 import debounce from "lodash.debounce";
 import API from "./fetchCountries";
-import {Notify} from 'notiflix/build/notiflix-block-aio';
 import Notiflix from 'notiflix';
 
 const DEBOUNCE_DELAY = 300;
@@ -12,7 +11,7 @@ const refs = {
     box:document.querySelector(".country-info"),
 }
 
-refs.input.addEventListener("input", debounce(onInputChange), DEBOUNCE_DELAY);
+refs.input.addEventListener("input", debounce(onInputChange, DEBOUNCE_DELAY));
 
 function onInputChange(event) {
     const needCountry = inputTrim(event);
